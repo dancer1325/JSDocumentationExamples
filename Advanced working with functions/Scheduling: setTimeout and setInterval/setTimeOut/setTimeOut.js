@@ -35,5 +35,5 @@ alert(timerId);         //  timerId is not null, after cancelling
 
 // 7. setTimeOut with 0 delay
 // This setTimeOut with 0 delay is executed after completing this script
-setTimeout(() => alert("World"));
-alert("Hello");
+setTimeout(() => alert("World - 0 delay"));
+alert("Hello - 0 delay");
