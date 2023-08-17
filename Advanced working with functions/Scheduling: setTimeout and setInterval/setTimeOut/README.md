@@ -9,3 +9,4 @@ Understand setTimeOut
     * callback as arrow function & delayInms
     * callback, not a function executed -- () --
     * setTimeOut returns timerId
+    * 0 delay
