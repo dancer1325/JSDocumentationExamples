@@ -28,6 +28,15 @@ class MyElement extends HTMLElement {
         // (happens in document.adoptNode, very rarely used)
     }
 
+    // Properties as any ES6 class
+    set name(value){}
+    get name(){}
+
+    // Listen events
+    onClick(){
+        this.dispatchEvent(new CustomEvent('nameChange'), {});
+    }
+
     // there can be other element methods and properties
 }
 
