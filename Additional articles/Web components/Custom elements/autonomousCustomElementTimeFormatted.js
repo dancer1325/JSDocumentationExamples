@@ -1,5 +1,5 @@
 class TimeFormatted extends HTMLElement {
-    connectedCallback() {
+    render() {
         let date = new Date(this.getAttribute('datetime') || Date.now());
 
         this.innerHTML = new Intl.DateTimeFormat("default", {
@@ -11,6 +11,22 @@ class TimeFormatted extends HTMLElement {
             second: this.getAttribute('second') || undefined,
             timeZoneName: this.getAttribute('time-zone-name') || undefined,
         }).format(date);
+    }
+
+    connectedCallback() {
+        if (!this.rendered) {
+            this.render();
+            this.rendered = true;
+        }
+    }
+
+    // List of attributes to monitor
+    static get observedAttributes() {
+        return ['datetime', 'year', 'month', 'day', 'hour', 'minute', 'second', 'time-zone-name'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        this.render();
     }
 }
 

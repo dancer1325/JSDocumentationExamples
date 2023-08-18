@@ -28,9 +28,17 @@
 
 
 <!-- Use it, after define it -->
-<time-formatted datetime="2019-12-01"
+<!-- Assign an id -->
+<time-formatted id="elem" datetime="2019-12-01"
                 year="numeric" month="long" day="numeric"
                 hour="numeric" minute="numeric" second="numeric"
                 time-zone-name="short"
 ></time-formatted>
+
+<!-- Add another script directly here
+setAttribute            comes from Element from which HTMLElement extends from -->
+<script>
+    <!-- setInterval        periodic script -->
+    setInterval(() => elem.setAttribute('datetime', new Date()), 1000);
+</script>
 
