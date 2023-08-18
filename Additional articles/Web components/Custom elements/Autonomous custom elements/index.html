@@ -56,6 +56,9 @@ setAttribute            comes from Element from which HTMLElement extends from -
 <render-order-set-timeout>Alfred</render-order-set-timeout>
 
 <!-- All about outer is executed first due to nested setTimeOut -->
-<render-order-nested-set-timeout id="outer">
+<render-order-nested-set-timeout id="outer" >
     <render-order-nested-set-timeout id="inner"></render-order-nested-set-timeout>
 </render-order-nested-set-timeout>
+
+<!-- Get access to into the custom element via attributes  -->
+<!--<render-order-observing-attributes-to-inner innerSample='inner'> Alfredo </render-order-observing-attributes-to-inner>-->

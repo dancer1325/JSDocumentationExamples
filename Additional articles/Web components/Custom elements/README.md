@@ -19,6 +19,10 @@
   * get access innerHTML information via setTimeOut
 * RenderingOrderNestedSetTimeOut
   * get access information via setTimeOut, but with the problem of nested setTimeOut -> Not recommended
+* RenderingOrderObservingAttributesAndListeningChanges
+  * get access information passed into the custom element -- under construction --
+
+## Customized built-in elements
 
 ## How to run locally?
 * Open 'index.html' in the browser

@@ -29,4 +29,27 @@ class RenderingOrderNestedSetTimeOut extends HTMLElement {
 customElements.define("render-order-nested-set-timeout", RenderingOrderNestedSetTimeOut);
 
 
-// TODO: Build get access to children's content via observedAttributes & attributeChangedCallback
+// TODO: Build get access to children's content via observedAttributes & attributeChangedCallback -- Fix --
+class RenderingOrderObservingAttributesAndListeningChanges extends HTMLElement {
+
+    render() {
+        //alert(this.b);
+    }
+
+    connectedCallback() {
+        if (!this.rendered) {
+            this.render();
+            this.rendered = true;
+        }
+    }
+
+    static get observedAttributes() {
+        return ['innerSample'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        this.render();
+    }
+}
+
+customElements.define("render-order-observing-attributes-to-inner", RenderingOrderObservingAttributesAndListeningChanges);
