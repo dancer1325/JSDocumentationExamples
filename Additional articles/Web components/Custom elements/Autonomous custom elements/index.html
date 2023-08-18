@@ -42,3 +42,20 @@ setAttribute            comes from Element from which HTMLElement extends from -
     setInterval(() => elem.setAttribute('datetime', new Date()), 1000);
 </script>
 
+
+<!--                                                            -->
+
+<!-- Rendering order -->
+<script src="renderingOrder.js"></script>
+
+<!-- Within the HTML element is accessed -->
+<!-- Alfred is not caught in this case -->
+<render-order>Alfred</render-order>
+
+<!-- In this one, it's caught within information -->
+<render-order-set-timeout>Alfred</render-order-set-timeout>
+
+<!-- All about outer is executed first due to nested setTimeOut -->
+<render-order-nested-set-timeout id="outer">
+    <render-order-nested-set-timeout id="inner"></render-order-nested-set-timeout>
+</render-order-nested-set-timeout>

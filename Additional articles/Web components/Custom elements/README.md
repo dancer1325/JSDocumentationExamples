@@ -13,6 +13,12 @@
 * TimeFormatted
   * is an example
   * check [ECMA402](https://tc39.es/ecma402/)
+* RenderingOrder
+  * impossible to get access innerHTML information
+* RenderingOrderSetTimeOut
+  * get access innerHTML information via setTimeOut
+* RenderingOrderNestedSetTimeOut
+  * get access information via setTimeOut, but with the problem of nested setTimeOut -> Not recommended
 
 ## How to run locally?
 * Open 'index.html' in the browser
