@@ -23,6 +23,9 @@
   * get access information passed into the custom element -- under construction --
 
 ## Customized built-in elements
+* HelloButton
+  * is an example
+  * extends from the existing built-in HTMLButtonElement
 
 ## How to run locally?
 * Open 'index.html' in the browser
