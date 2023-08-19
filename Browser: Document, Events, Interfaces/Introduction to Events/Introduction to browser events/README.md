@@ -28,3 +28,6 @@
 ## Event object
 * can be passed to event handler's argument
 * have certain global properties and other depends on event type
+
+## Tasks
+* Task1
