@@ -5,9 +5,14 @@
 * ways to assign
   * HTML attribute
   * DOM property
-  * `.addEventListener()`
+  * `.addEventListener(eventName, handler, [options])`
     * By default, it will listen the event forever
-    * `once: true` -> after 1@ execution, listener will be removed
+    * `handler: Function | EventListener`
+      * `interface EventListener` with
+        * `handleEvent(Event event): undefined`
+    * `[options]`
+      * Optional 
+      * `once: true` -> after 1@ execution, listener will be removed
     * `.removeEventListener()` with the same (!!) arguments -> event handler is removed
     * Several event handlers / event can be added
     * There are certain events, which just accepts `addEventListener()`
@@ -23,4 +28,3 @@
 ## Event object
 * can be passed to event handler's argument
 * have certain global properties and other depends on event type
-
