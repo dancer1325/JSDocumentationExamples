@@ -20,5 +20,7 @@
 * Event handlers can not be used via `setAttribute()`
 * DOM property event handler assignment is case-sensitive
 
-
+## Event object
+* can be passed to event handler's argument
+* have certain global properties and other depends on event type
 
