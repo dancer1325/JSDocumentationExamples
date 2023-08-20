@@ -28,3 +28,6 @@
   * `new CustomEvent(type[, customOptions])`
     * `customOptions extends options`
       * `detail?: T`
+
+## event.preventDefault()
+* importance in `.dispatchEvent(event)` 's returned value
