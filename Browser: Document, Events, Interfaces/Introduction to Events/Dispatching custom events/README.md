@@ -21,3 +21,10 @@
 * with
   * new type
   * existing type
+
+## Custom events
+* Ways to create them
+  * `new Event(type[, options])`
+  * `new CustomEvent(type[, customOptions])`
+    * `customOptions extends options`
+      * `detail?: T`
