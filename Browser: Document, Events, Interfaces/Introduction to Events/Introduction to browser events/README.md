@@ -5,11 +5,13 @@
 * ways to assign
   * HTML attribute
   * DOM property
+    * 👀 You can get access to the event 👀
   * `.addEventListener(eventName, handler, [options])`
     * By default, it will listen the event forever
     * `handler: Function | EventListener`
       * `interface EventListener` with
         * `handleEvent(Event event): undefined`
+          * 👀 You can get access to the event 👀
     * `[options]`
       * Optional 
       * `once: true` -> after 1@ execution, listener will be removed
