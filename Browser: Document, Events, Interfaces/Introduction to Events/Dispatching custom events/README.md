@@ -16,3 +16,8 @@
 ## Bubbling
 * `new Event(type, {bubbles: true})`
 * Add event handlers to ancestors elements, to check how the event goes through them
+
+## Adjust built-in events
+* with
+  * new type
+  * existing type
