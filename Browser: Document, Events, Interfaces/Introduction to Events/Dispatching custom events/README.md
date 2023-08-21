@@ -31,3 +31,7 @@
 
 ## event.preventDefault()
 * importance in `.dispatchEvent(event)` 's returned value
+
+## events in events are sync
+* Events are processed in a queue
+* If an event is dispatched within another one → that event is processed immediately 
