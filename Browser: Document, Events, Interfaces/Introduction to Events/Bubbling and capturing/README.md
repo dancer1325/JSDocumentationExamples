@@ -4,3 +4,5 @@
 ## Bubbling
 * Almost all events bubble
 * If you click on a child without event handler for that event, but some parent has got → parent’s event handler will be trigger
+## event.target
+* := most deeply element which caused the event
