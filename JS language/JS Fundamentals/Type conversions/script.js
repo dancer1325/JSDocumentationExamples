@@ -71,4 +71,3 @@ console.log("booleanConversionOfAnyNumberNo0 " + booleanConversionOfAnyNumberNo0
 let booleanConversionOfNoEmptyString = Boolean("NoEmptyString");
 console.log("typeof booleanConversionOfNoEmptyString "+ (typeof booleanConversionOfNoEmptyString));     // The type is boolean
 console.log("booleanConversionOfNoEmptyString " + booleanConversionOfNoEmptyString);      // The value is true
-d
