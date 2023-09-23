@@ -7,3 +7,4 @@
 * Types of functions
   * function declaration
   * function expression
+  * arrow functions
