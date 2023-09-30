@@ -11,6 +11,24 @@ const anotherUser = {
         console.log("anotherUser - Hello");
     }
 };
+// 3. add once it's initialized the instance
+anotherUser.sayAnotherHi = function () {
+    console.log("sayAnotherHi invoked");
+};
+console.log("anotherUser.sayAnotherHi " + (anotherUser.sayAnotherHi));
+// 4. reformat an existing one
+// 4.1 If you pass an argument to a function which doesn't expect it -> nothing happen
+anotherUser.sayAnotherHi(function () {
+    console.log("sayAnotherHi reformat");
+});
+console.log("anotherUser.sayAnotherHi reformatted " + (anotherUser.sayAnotherHi));  // You haven't reformatted anything
+anotherUser.sayAnotherHi = function () {
+    console.log("sayAnotherHi reformat properly");
+};
+console.log("anotherUser.sayAnotherHi reformatted properly" + (anotherUser.sayAnotherHi));
+anotherUser.sayAnotherHi();
+
+
 
 //                                                  this
 // 1. In methods
