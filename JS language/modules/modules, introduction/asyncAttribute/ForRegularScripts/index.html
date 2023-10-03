@@ -4,10 +4,10 @@
 </head>
 
 <body>
-<!--                                                    Module script                        -->
-<!-- 1. Inline -->
+<!--                                                    Regular script                        -->
+<!-- 1. Inline -->      <!-- TODO: Waiting for question's feedback-->
     <button id="buttonDefinedBefore">Text</button>
-    <script async type="module">
+    <script async>
         const buttonDefinedBefore = document.getElementById('buttonDefinedBefore'); // !=null, since it's defined before
         console.log("Internal - buttonDefinedBefore == null " + (buttonDefinedBefore == null));
 
@@ -17,7 +17,7 @@
     </script>
 
 <!-- 2. External -->
-    <script async type="module" src="moduleExternalScript.js"></script>
+    <script async src="regularExternalScript.js"></script>
 
 <!-- Regular script runs immediately -->
     <script>

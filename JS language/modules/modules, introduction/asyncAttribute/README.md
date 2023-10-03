@@ -4,4 +4,10 @@
 
 ## Content
 * For module scripts
+  * valid for
+    * inline scripts and
+    * external scripts
 * For regular scripts
+  * valid for
+    * inline scripts and
+    * external scripts
